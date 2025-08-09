@@ -17,10 +17,10 @@ function perfil() {
       <p className="Subtitulo">Datos Personales</p>
       <div className="Datos">
         <div className="Recuadro" onClick={() => toggleRecuadro(0)}>
-          {vista[0] ? "Brayan Estiben Giraldo" : "Mi Nombre:"}
+          {vista[0] ? "Mi nombre es Brayan Estiben Giraldo Garcia, Soy de Colombia y tengo 19 años de edad" : "Mis Datos:"}
         </div>
-        <div className="Recuadro" onClick={() => toggleRecuadro(1)}>{vista[1] ? "La Programacion, los Videojuegos y el Deporte" : "Mis Hobbies:"}</div>
-        <div className="Recuadro" onClick={() => toggleRecuadro(2)}>{vista[2] ? "Tengo 19 años, naci en enero y soy de Colombia" : "Datos sobre mi"}</div>
+        <div className="Recuadro" onClick={() => toggleRecuadro(1)}>{vista[1] ? "Programacion especializado en Frontend, pero tengo experiencia en Backend y Bases de datos con gran manejo del Ingles" : "Mis cualidades:"}</div>
+        <div className="Recuadro" onClick={() => toggleRecuadro(2)}>{vista[2] ? "Estudie la tecnica de Desarrollo de Software en el CESDE de Bello hasta Junio del 2025" : "Estudios:"}</div>
       </div>
     </div>
   );

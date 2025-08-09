@@ -34,9 +34,9 @@ function bienvenida() {
 
   return (
     <div className="Bienvenida">
-      <h1 className="Titulo">Bienvenido a mi presentacion</h1>
+      <h1 className="Titulo">Bienvenido a mi Portafolio</h1>
       <button onClick={Alerta} className="Presentacion">
-        Presentacion
+        Conocer mas sobre mi
       </button>
     </div>
   );
