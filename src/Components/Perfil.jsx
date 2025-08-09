@@ -1,18 +1,29 @@
-import './Perfil.css'
+import "./Perfil.css";
+import { useState } from "react";
 
 function perfil() {
+  const [vista, setVista] = useState([false, false, false]);
+
+  const toggleRecuadro = (index) => {
+    const copia = [...vista];
+    copia[index] = !copia[index]; // cambia solo el seleccionado
+    setVista(copia);
+  };
+
   return (
-   <div className='Perfil'>
-    <h1 className='Titulo'>Mi Persona</h1>
-        <div className='Imagen'>
+    <div className="Perfil">
+      <p className="Titulo">Mi Persona</p>
+      <div className="Imagen"></div>
+      <p className="Subtitulo">Datos Personales</p>
+      <div className="Datos">
+        <div className="Recuadro" onClick={() => toggleRecuadro(0)}>
+          {vista[0] ? "Brayan Estiben Giraldo" : "Mi Nombre:"}
         </div>
-    <div className='Datos'>
-        <div className='Recuadro'>Mi Nombre</div>
-        <div className='Recuadro'>Mis Hobbies</div>
-        <div className='Recuadro'>Datos de mi</div>
+        <div className="Recuadro" onClick={() => toggleRecuadro(1)}>{vista[1] ? "La Programacion, los Videojuegos y el Deporte" : "Mis Hobbies:"}</div>
+        <div className="Recuadro" onClick={() => toggleRecuadro(2)}>{vista[2] ? "Tengo 19 años, naci en enero y soy de Colombia" : "Datos sobre mi"}</div>
+      </div>
     </div>
-   </div> 
-  )
+  );
 }
 
-export default perfil
+export default perfil;
