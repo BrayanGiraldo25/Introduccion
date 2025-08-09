@@ -1,0 +1,41 @@
+body{
+    background-image: url('../assets/Espacio.jpg');
+}
+
+.Bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.Titulo {
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.Presentacion {
+    background-color: white;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.Presentacion:hover {
+    padding: 30px 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
