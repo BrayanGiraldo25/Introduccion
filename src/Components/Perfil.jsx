@@ -6,7 +6,7 @@ function perfil() {
 
   const toggleRecuadro = (index) => {
     const copia = [...vista];
-    copia[index] = !copia[index]; // cambia solo el seleccionado
+    copia[index] = !copia[index]; 
     setVista(copia);
   };
 
